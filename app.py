@@ -125,21 +125,3 @@ st.markdown("""
     <h3>Output Prediksi</h3>
     <p>Hasil prediksi akan ditampilkan di sini.</p>
 """, unsafe_allow_html=True)
-# Button to make prediction
-if st.button('Predict'):
-    try:
-        # Apply preprocessing
-        user_input_processed = preprocessor.transform(user_input)
-        
-        # Make prediction
-        prediction = model.predict(user_input_processed)
-        prediction_proba = model.predict_proba(user_input_processed)
-        
-        # Display prediction
-        st.write('### Hasil Prediksi')
-        st.write(f'Output Prediksi: {prediction[0]}')
-        st.write(f'Probabilitas Prediksi: {prediction_proba[0]}')
-    except ValueError as e:
-        st.error(f"Error during preprocessing: {e}")
-    except Exception as e:
-        st.error(f"Terjadi kesalahan: {e}")
