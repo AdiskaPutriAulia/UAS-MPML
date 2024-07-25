@@ -82,7 +82,7 @@ st.markdown("""
         background-color: #FFC9DE;
     }
     </style>
-    <h3>Data Pelanggan</h3>
+    <h3>Web ini akan memunculkan berapa kali seorang customer membeli Onlie Food</h3>
 """, unsafe_allow_html=True)
 
 # Input pengguna
