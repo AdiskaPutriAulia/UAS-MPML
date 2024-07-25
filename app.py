@@ -87,7 +87,7 @@ st.markdown("""
     }
     </style>
     <div class="centered-text">
-    <h3>Web ini akan memunculkan berapa kali seorang customer membeli Online Food</h3>
+    <h3>Web ini akan memunculkan prediksi customer akan membeli makanan online atau tidak</h3>
     </div>
 """, unsafe_allow_html=True)
 
@@ -101,7 +101,7 @@ educational_qualifications = st.selectbox('Educational Qualifications', ['Under 
 family_size = st.number_input('Family size', min_value=1, max_value=20)
 latitude = st.number_input('Latitude', format="%f")
 longitude = st.number_input('Longitude', format="%f")
-feedback = st.selectbox('Feedback',['Positive','Negative'])
+feedback = st.selectbox('Feedback', ['Positive','Negative'])
 pin_code = st.number_input('Pin code', min_value=100000, max_value=999999)
 
 user_input = {
