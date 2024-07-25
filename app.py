@@ -47,10 +47,10 @@ def preprocess_input(user_input):
 st.markdown("""
     <style>
     .main {
-        background-color: #87CEEB;
+        background-color: #FFC9DE;
     }
     h1 {
-        color: #4b4b4b;
+        color: #FFC9DE;
         text-align: center;
         margin-bottom: 12px;
     }
@@ -58,7 +58,7 @@ st.markdown("""
         color: #4b4b4b;
     }
     .stButton>button {
-        background-color: #4b4b4b;
+        background-color: #FFC9DE;
         color: black;
         padding: 10px 24px;
         border: none;
