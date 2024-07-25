@@ -46,29 +46,31 @@ def preprocess_input(user_input):
 st.markdown("""
     <style>
     .main {
-        background-color: #87CEEB;
+        background-color: #f0f0f5;
     }
-    h1 {
+    h1, h3 {
         color: #4b4b4b;
         text-align: center;
-        margin-bottom: 25px;
-    }
-    h3 {
-        color: #4b4b4b;
     }
     .stButton>button {
         background-color: #4b4b4b;
-        color: black;
+        color: white;
         padding: 10px 24px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
     }
     .stButton>button:hover {
-        background-color: #4b4b4b;
+        background-color: #333333;
     }
     .stNumberInput, .stSelectbox {
         margin-bottom: 20px;
+    }
+    .prediction-result {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #4b4b4b;
     }
     </style>
 """, unsafe_allow_html=True)
