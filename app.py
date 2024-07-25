@@ -10,7 +10,7 @@ model = joblib.load('best_model.pkl')
 data = pd.read_csv('onlinefoods.csv')
 
 # Daftar kolom yang diperlukan selama pelatihan
-required_columns = ['Age', 'Gender', 'Marital Status', 'Occupation', 'Monthly Income', 'Educational Qualifications', 'Family size', 'latitude', 'longitude']
+required_columns = ['Age', 'Gender', 'Marital Status', 'Occupation', 'Monthly Income', 'Educational Qualifications', 'Family size', 'latitude', 'longitude', 'Pin code']
 
 # Pastikan hanya kolom yang diperlukan ada
 data = data[required_columns]
@@ -83,8 +83,8 @@ st.markdown("""
     }
     </style>
     <div class="centered-text">
-        <h3>Web ini akan memunculkan berapa kali seorang customer membeli Online Food</h3>
-    </div>
+    <h3>Web ini akan memunculkan berapa kali seorang customer membeli Online Food</h3>
+       </div>
 """, unsafe_allow_html=True)
 
 # Input pengguna
@@ -108,7 +108,8 @@ user_input = {
     'Educational Qualifications': educational_qualifications,
     'Family size': family_size,
     'latitude': latitude,
-    'longitude': longitude
+    'longitude': longitude,
+    'Pin code': pin_code
 }
 
 if st.button('Predict'):
