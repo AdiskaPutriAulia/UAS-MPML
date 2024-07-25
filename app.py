@@ -47,10 +47,10 @@ def preprocess_input(user_input):
 st.markdown("""
     <style>
     .main {
-        background-color: #4b4b4b
+        background-color: #87CEEB;
     }
     h1 {
-        color: #FFC9DE;
+        color: #4b4b4b;
         text-align: center;
         margin-bottom: 12px;
     }
@@ -58,7 +58,7 @@ st.markdown("""
         color: #4b4b4b;
     }
     .stButton>button {
-        background-color: #FFC9DE;
+        background-color: #4b4b4b;
         color: black;
         padding: 10px 24px;
         border: none;
@@ -66,7 +66,7 @@ st.markdown("""
         cursor: pointer;
     }
     .stButton>button:hover {
-        background-color: #FFC9DE;
+        background-color: #4b4b4b;
     }
     .stNumberInput, .stSelectbox {
         margin-bottom: 20px;
@@ -81,6 +81,11 @@ st.markdown("""
 st.title("Prediksi Output Customer Online Food")
 
 st.markdown("""
+ <style>
+    .main {
+        background-color: #FFC9DE;
+    }
+
     <div class="centered-text">
         <h3>Web ini akan memunculkan berapa kali seorang customer membeli Online Food</h3>
     </div>
