@@ -10,7 +10,7 @@ model = joblib.load('best_model.pkl')
 data = pd.read_csv('onlinefoods.csv')
 
 # Daftar kolom yang diperlukan selama pelatihan
-required_columns = ['Age', 'Gender', 'Marital Status', 'Occupation', 'Monthly Income', 'Educational Qualifications', 'Family size', 'latitude', 'longitude', 'Pin code']
+required_columns = ['Age', 'Gender', 'Marital Status', 'Occupation', 'Monthly Income', 'Educational Qualifications', 'Family size', 'latitude', 'longitude', 'Feedback', 'Pin code']
 
 # Pastikan hanya kolom yang diperlukan ada
 data = data[required_columns]
@@ -101,6 +101,7 @@ educational_qualifications = st.selectbox('Educational Qualifications', ['Under 
 family_size = st.number_input('Family size', min_value=1, max_value=20)
 latitude = st.number_input('Latitude', format="%f")
 longitude = st.number_input('Longitude', format="%f")
+feedback = st.selectbox('Feedback',['Positive','Negative'])
 pin_code = st.number_input('Pin code', min_value=100000, max_value=999999)
 
 user_input = {
@@ -113,6 +114,7 @@ user_input = {
     'Family size': family_size,
     'latitude': latitude,
     'longitude': longitude,
+    'Feedback' : feedback,
     'Pin code': pin_code
 }
 
