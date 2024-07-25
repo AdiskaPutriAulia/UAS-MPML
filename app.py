@@ -46,42 +46,40 @@ def preprocess_input(user_input):
 st.markdown("""
     <style>
     .main {
-        background-color: #f0f0f5;
+        background-color: #87CEEB;
     }
-    h1, h3 {
+    h1 {
         color: #4b4b4b;
         text-align: center;
+        margin-bottom: 25px;
+    }
+    h3 {
+        color: #4b4b4b;
     }
     .stButton>button {
         background-color: #4b4b4b;
-        color: white;
+        color: black;
         padding: 10px 24px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
     }
     .stButton>button:hover {
-        background-color: #FFC9DE;
+        background-color: #4b4b4b;
     }
     .stNumberInput, .stSelectbox {
-        margin-bottom: 12px;
-    }
-    .prediction-result {
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
-        color: #4b4b4b;
+        margin-bottom: 20px;
     }
     </style>
 """, unsafe_allow_html=True)
 
 # Antarmuka Streamlit
-st.title("Prediksi Output untuk Online Food")
+st.title("Prediksi Output Customer Online Food")
 
 st.markdown("""
     <style>
     .main {
-        background-color: #FFC9DE;
+        background-color: #87CEEB;
     }
     </style>
     <h3>Data Pelanggan</h3>
@@ -108,8 +106,8 @@ user_input = {
     'Educational Qualifications': educational_qualifications,
     'Family size': family_size,
     'latitude': latitude,
-    'longitude': longitude
-    'Pin code' : pin_code
+    'longitude': longitude,
+    'Pin code': pin_code
 }
 
 if st.button('Predict'):
