@@ -66,7 +66,7 @@ st.markdown("""
         cursor: pointer;
     }
     .stButton>button:hover {
-        background-color: #4b4b4b;
+        background-color: #FFC9DE;
     }
     .stNumberInput, .stSelectbox {
         margin-bottom: 20px;
@@ -82,7 +82,7 @@ st.title("Prediksi Output Customer Online Food")
 
 st.markdown("""
     <div class="centered-text">
-        <h3>Data Pelanggan</h3>
+        <h3>Web ini akan memunculkan berapa kali seorang customer membeli Online Food</h3>
     </div>
 """, unsafe_allow_html=True)
 
