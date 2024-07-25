@@ -42,7 +42,6 @@ def preprocess_input(user_input):
     processed_input = pd.DataFrame(processed_input)
     processed_input[numeric_features] = scaler.transform(processed_input[numeric_features])
     return processed_input
-
 # CSS for styling
 st.markdown("""
     <style>
@@ -71,9 +70,6 @@ st.markdown("""
     .stNumberInput, .stSelectbox {
         margin-bottom: 20px;
     }
-    .centered-text {
-        text-align: center;
-    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -81,14 +77,14 @@ st.markdown("""
 st.title("Prediksi Output Customer Online Food")
 
 st.markdown("""
- <style>
+    <style>
     .main {
         background-color: #FFC9DE;
     }
-
+    </style>
     <div class="centered-text">
-        <h3>Web ini akan memunculkan berapa kali seorang customer membeli Online Food</h3>
-    </div>
+    <h3>Web ini akan memunculkan berapa kali seorang customer membeli Online Food</h3>
+       </div>
 """, unsafe_allow_html=True)
 
 # Input pengguna
@@ -126,8 +122,6 @@ if st.button('Predict'):
 
 # Tambahkan elemen HTML untuk output
 st.markdown("""
-    <div class="centered-text">
-        <h3>Output Prediksi</h3>
-        <p>Hasil prediksi akan ditampilkan di sini.</p>
-    </div>
+    <h3>Output Prediksi</h3>
+    <p>Hasil prediksi akan ditampilkan di sini.</p>
 """, unsafe_allow_html=True)
