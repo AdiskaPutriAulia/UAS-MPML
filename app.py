@@ -51,7 +51,7 @@ st.markdown("""
     h1 {
         color: #4b4b4b;
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 12px;
     }
     h3 {
         color: #4b4b4b;
