@@ -61,10 +61,10 @@ st.markdown("""
         cursor: pointer;
     }
     .stButton>button:hover {
-        background-color: #333333;
+        background-color: #FFC9DE;
     }
     .stNumberInput, .stSelectbox {
-        margin-bottom: 20px;
+        margin-bottom: 12px;
     }
     .prediction-result {
         text-align: center;
@@ -76,7 +76,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Antarmuka Streamlit
-st.title("Prediksi Feedback Pelanggan Online Food")
+st.title("Prediksi Output untuk Online Food")
 
 st.markdown("""
     <style>
@@ -84,7 +84,7 @@ st.markdown("""
         background-color: #87CEEB;
     }
     </style>
-    <h3>Masukkan Data Pelanggan</h3>
+    <h3>Data Pelanggan</h3>
 """, unsafe_allow_html=True)
 
 # Input pengguna
